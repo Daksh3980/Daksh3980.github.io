@@ -1,158 +1,184 @@
+/* Importing Google Fonts: Roboto and Source Sans 3 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-
+/* Base styles for the html and body */
 html, body {
-  font-family: "Source Sans 3", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  color: #222;
-  line-height: 1.6;
-  overflow-x: hidden;
-  width: 100%; 
+  font-family: "Source Sans 3", sans-serif;/* Sets clean, modern font */
+  margin: 0;/* Removes default browser margin */
+  padding: 0;/* Removes default browser padding */
+  background-color: #fdfdfd;/* Light background for clean look */
+  color: #222;/* Dark text for readability */
+  line-height: 1.6;/* Improves text spacing */
+  overflow-x: hidden;/* Prevents horizontal scroll */
+  width: 100%;/* Ensures full width usage */
   
 }
 
-
+/* Main heading style */
 h1 {
-  font-size: 44px;
-  margin-bottom: 10px;
-  text-align: center;
-  width: 100%;
+  font-size: 44px;/* Large, bold title */
+  margin-bottom: 10px;/* Space below heading */
+  text-align: center;/* Centers the heading */
+  width: 100%;/* Full width alignment */
 
 }
 
+/* Subheading style */
 h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #e33e3e;
-  width: 60%;
+  font-size: 30px;/* Slightly smaller than h1 */
+  margin-bottom: 20px;/* Space below subheading */
+  border-bottom: 2px solid #e33e3e;/* Red underline for emphasis */
+  width: 60%;/* Limits width for better layout */
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: center;/* Centers the sub-heading */
+
 }
 
+/* 3rd heading style */
 h3 {
   font-size: 20px;
-  color: #444;
+  color: #444;/* Slightly lighter than body text */
   margin-top: 15px;
 }
 
-
+/* Paragraph styling */
 p {
-  text-align: center;
-  margin: 10px 0;
-  padding: 0 20px;
-  font-size: 17.5px;
+  text-align: center;/* Centers all paragraph text */
+  margin: 10px 0;/* Vertical spacing */
+  padding: 0 20px;/* Horizontal padding */
+  font-size: 17.5px;/* Easy-to-read size */
+
 }
 
+/* Link styling */
 a {
-  color: #e33e3e;
-  text-decoration: none;
-  font-weight: bold;
+  color: #e33e3e;/* Red for links */
+  text-decoration: none;/* Removes underline */
+  font-weight: bold;/* Makes links stand out */
+
 }
 
-
+/* Footer styling */
 footer {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
+  background-color: #1a1a1a;/* Dark background for contrast */
+  color: white;/* White text for readability */
+  text-align: center;/* Centers all footer text */
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 40px;/* Space above footer */
+
 
 }
 
+/* Hover effect for footer links */
 footer a:hover {
-  text-decoration: underline;
-
+  text-decoration: underline;/* Adds underline on hover */
 
 }
+
+/* Container for featured product cards */
 .featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 20px
+  display: flex;/* Flexbox layout for horizontal alignment */
+  flex-wrap: wrap;/* Allows wrapping on smaller screens */
+  justify-content: center;/* Centers the items */
+  gap: 40px;/* Space between product cards */
+  padding: 40px 20px/* Outer spacing */
+
 }
+
+/* Product card styling */
 
 .product {
-  width: 45%;
+  width: 45%;/* Responsive width */
   max-width: 400px;
   min-width: 280px;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4;/* Light card background */
   text-align: center;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;/* Small border */
+  border-radius: 10px;/* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/* Small shadow */
   text-align: center;
   height:auto;
 }
 
+/* Logo container positioning */
 .logo-container {
-  position: absolute;
+  position: absolute;/* Places logo in top corner */
   top: 1px;
   right: 20px;
   margin: auto;
   max-width: 150px;
 }
 
+/* Logo image sizing */
 .logo-container img {
-  max-width: 100px; 
+  max-width: 100px;/* Scales logo image */
   height: auto;
   margin: auto;
 }
+
+/* About section layout */
 .about-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px; 
+  display: flex;/* Horizontal layout */
+  align-items: center;/* Vertically centers items */
+  justify-content: center;/* Horizontally centers items */
+  gap: 40px; /* Space between text and image */
   padding: 40px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
+/* Text inside About section */
 .about-text {
-  text-align: left;
-  max-width: 500px;
+  text-align: left;/* Aligns text to the left */
+  max-width: 500px;/* Limits width for readability */
 }
 
+/* Image styling in About section */
 .about-section img {
   max-width: 400px;
-  border-radius: 12px;
+  border-radius: 12px;/* Rounded corners for softer look */
+
 }
+
+/* Navigation button row */
 .button-row {
-  display: flex;
+  display: flex;/* Horizontal layout */
   justify-content: center;    
-  flex-wrap: wrap;            
-  gap: 15px;                  
-  background-color: #1a1a1a;
+  flex-wrap: wrap;/* Allows stacking on smaller screens */            
+  gap: 15px; /* Space between buttons */                 
+  background-color: #1a1a1a;/* Dark background for contrast */
   padding: 20px;
   margin: 0;
 }
 
+/* Navigation button styling */
 .nav-button {
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
+  background-color: #f4f4f4;/* Light button background */
+  border: 1px solid #ccc;/* Small border */
   font-size: 16px;
   color: black;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;/* Pointer cursor on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/* Small shadow */
   text-align: center;
   width: 210px;
-  border-radius: 12px; 
+  border-radius: 12px; /* Rounded corners */  
   padding: 32px; 
   margin-right: 10px; 
   margin-top: 20px; 
   margin-bottom: 20px;
   height: auto;
   top: 0px;
-  transition: top 0.3s ease-out;
+  transition: top 0.3s ease-out;/* Smooth hover animation */
   position: relative;
 
 }
+
+/* Hover effect for navigation buttons */
 .nav-button:hover {
-  background-color: rgb(224, 223, 223);
-  text-decoration: underline;
-  opacity:0.7;
-  top:-5px
+  background-color: rgb(224, 223, 223);/* Slight color change */
+  text-decoration: underline;/* Adds underline to text */
+  opacity:0.7;/* Slight fade effect */
+  top:-5px/* Lifts button slightly */
+
 }
